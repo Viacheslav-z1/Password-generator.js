@@ -4,9 +4,91 @@
 @import 'global';
 
 
+body{
+  background-color: rgb(16, 19, 24);
+  color: #fff;
+}
 
 
+.password {
 
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 10px;
+  &__title {
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__form {}
+
+  &__name {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  &__btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__generate{
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  &__box {}
+
+  &__result {
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 22px;
+  }
+
+  &__copy {}
+
+  &__label{
+   margin-bottom: 25px;
+   display: block;
+   user-select: none;
+   display: flex;
+   gap: 10px;
+  }
+
+  &__label-chek{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  &__name-res{
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__input-num{
+    padding: 10px;
+    height: 30px;
+    width: 50px;
+    font-size: 24px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: #fff;
+    border-radius: 10px;
+  }
+}
+
+.big-wrapper {}
 
 
 

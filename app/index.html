@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,42 @@
   <title>Password generator</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
+
+  <section class="password big-wrapper">
+    <h1 class="password__title">
+      Password generator
+    </h1>
+    <form class="password__form">
+      <label class="password__label">
+        <p class="password__name">Write lengths your password (4-16)</p>
+        <input class="password__input-num" value="4" type="nums">
+      </label>
+      <label class="password__label password__label-chek">
+        <p class="password__name">Use letters</p>
+        <input type="checkbox">
+      </label>
+    </form>
+    <div class="password__btn-wrapper">
+      <button class="password__generate">Generate password</button>
+    </div>
+    <div class="password__box">
+      <h2 class="password__name password__name-res">
+        Your passrord:
+      </h2>
+      <h3 class="password__result">
+        fwefweffwef
+      </h3>
+      <div class="password__copy">
+
+      </div>
+    </div>
+  </section>
 
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
