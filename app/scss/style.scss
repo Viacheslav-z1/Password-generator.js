@@ -4,7 +4,7 @@
 @import 'global';
 
 
-body{
+body {
   background-color: rgb(16, 19, 24);
   color: #fff;
 }
@@ -15,6 +15,7 @@ body{
   max-width: 900px;
   margin: auto;
   padding: 50px 10px;
+
   &__title {
     font-size: 35px;
     line-height: 40px;
@@ -29,14 +30,14 @@ body{
     line-height: 30px;
   }
 
-  &__btn-wrapper{
+  &__btn-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
   }
 
-  &__generate{
+  &__generate {
     background-color: transparent;
     padding: 10px;
     border-radius: 15px;
@@ -55,28 +56,73 @@ body{
     font-size: 22px;
   }
 
-  &__copy {}
-
-  &__label{
-   margin-bottom: 25px;
-   display: block;
-   user-select: none;
-   display: flex;
-   gap: 10px;
+  &__copy {
+    position: relative;
+    padding-top: 30px;
   }
 
-  &__label-chek{
+  &__title-box {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__copy-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
     cursor: pointer;
   }
 
-  &__name-res{
+  &__label {
+    margin-bottom: 25px;
+    display: block;
+    user-select: none;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__label-chek {
+    display: inline-block;
+    gap: 10px;
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+    user-select: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid rgb(251, 251, 251);
+      box-sizing: content-box;
+    }
+  }
+
+  &__check {
+    display: none;
+    &:checked + .password__label-input::before{
+      background-image: url('../images/check.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+    }
+  }
+
+  &__name-res {
     font-size: 30px;
     margin-bottom: 15px;
   }
 
-  &__input-num{
+  &__input-num {
     padding: 10px;
     height: 30px;
     width: 50px;
@@ -85,6 +131,16 @@ body{
     border: 1px solid rgb(255, 255, 255);
     color: #fff;
     border-radius: 10px;
+    text-align: center;
+  }
+  &__descr{
+    position: absolute;
+    top: 0px;
+    padding: 4px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    user-select: none;
   }
 }
 
