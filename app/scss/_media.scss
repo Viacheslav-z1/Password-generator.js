@@ -1,0 +1,51 @@
+
+
+@media(max-width: 500px){
+.password {
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &__result {
+      padding: 10px;
+    }
+
+    &__generate {
+      font-size: 22px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    &__label {
+      flex-direction: column;
+    }
+  }
+}
+
+@media(max-width: 340px) {
+.password {
+  &__name{
+    font-size: 18px;
+  }
+  &__copy-btn{
+    width: 30px;
+    height: 30px;
+  }
+  &__descr {
+    top: 4px;
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  &__btn-wrapper{
+    margin-bottom: 15px;
+  }
+}
+}
